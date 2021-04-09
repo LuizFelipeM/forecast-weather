@@ -1,2 +1,2 @@
-release: npm install -g serve
+worker: npm install -g serve
 web: serve -s build
