@@ -4,6 +4,7 @@ import _ from 'lodash';
 import { Button, Col, Container, Row, Toast } from 'react-bootstrap';
 import { IForecast } from './IForecast';
 import Header from './components/Header';
+import Information from './components/Information';
 
 function App() {
   const baseUrl = 'https://forecast-weather-api-eci.herokuapp.com/'
@@ -31,7 +32,7 @@ function App() {
             {error}
           </Toast.Body>
         </Toast>
-        <Row className="justify-content-md-center" style={{ paddingTop: 10, paddingBottom: 10 }}>
+        <Row className="justify-content-md-center" style={{ paddingTop: 20, paddingBottom: 20 }}>
           <Col className="text-center" lg={2}>
             <Button onClick={handleClick('SP')}>
               Visualizar clima
@@ -43,12 +44,7 @@ function App() {
             </Button>
           </Col>
         </Row>
-        {showAbout ?
-          <Row className="justify-content-md-center">
-            <Col>
-              CP9P01 - Luiz Felipe Muniz Moura - D1614F-5
-            </Col>
-          </Row> :
+        {showAbout ? <Information /> :
         forecast &&
           <Row className="justify-content-md-center">
             <Col>
