@@ -1,0 +1,9 @@
+header.navbar {
+    padding: 15px 20px;
+    color: white;
+}
+
+header.navbar h1 {
+    font-size: 2rem;
+    margin: 0 0 0 15px;
+}
