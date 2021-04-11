@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { ReactComponent as UnipLogo } from './logo-unip.svg';
 import './styles.css'
 
 const Information: React.FC = () => (
@@ -25,6 +26,9 @@ const Information: React.FC = () => (
           </a>
         </li>
       </ul>
+    </Col>
+    <Col>
+      <UnipLogo/>
     </Col>
   </Row>
 )
